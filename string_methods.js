@@ -74,6 +74,17 @@ console.log(name.substring(len-10)) */
 
 //Separate a comma-separated list into an array of individual items 
 
+/* const list = "turtle, duck, puppy, pupper, dog, doggo";
+console.log(list)
+const regex = /, /g;
+const newlist = list.split(regex)
+console.log(newlist) */
+
+
 //Check out if an url begins with "http://" or "https://" 
 
- 
+/*  const url1 = "http://www.google.com"
+ const url2 = "https://google.com"
+ console.log(url1.startsWith("http"))
+ console.log(url1.startsWith("https"))
+ console.log(url2.startsWith("https")) */
