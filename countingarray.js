@@ -35,18 +35,21 @@ console.log(array) */
 
 window.addEventListener("DOMContentLoaded", loop);
 
-const array = [0];
-    console.log(array)
-        
-    let number = 1;
+const array = [];
+let number = 0;
 
 function loop(){
- if (array.length < 10) {
-console.log(array.push(number))
 
+     
+console.log(array.push(number))
 ++number;
+
 console.log(array)
+
+if (array.length < 10) {
 setTimeout(loop, 300)
- } 
+} 
 
 }
+
+console.log()
