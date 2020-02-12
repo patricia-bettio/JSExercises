@@ -66,3 +66,9 @@ console.log(people)
 result = people.splice(result,1);
 console.log(result)
 console.log(people)
+
+const str = "abcdefgh";
+const arr1 = str.split();
+console.log(arr1)
+const arr2 = Array.from(str);
+console.log(arr2)
