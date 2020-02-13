@@ -58,7 +58,7 @@ setTimeout(loop, 300)
 console.log()
 
 
-
+//se setar a array.lengh = 9 ele automaticamente exclui, sme precisar excluir
 
 /* var array = [0];
 var counter = array.push(1);
