@@ -39,17 +39,43 @@ const array = [];
 let number = 0;
 
 function loop(){
-
      
-console.log(array.push(number))
+    console.clear()
+console.log(array.unshift(number))
 ++number;
 
 console.log(array)
 
-if (array.length < 10) {
+if (array.length < 9) {
+    setTimeout(loop, 300)
+} else {
+console.log(array.pop())
 setTimeout(loop, 300)
-} 
+}
 
 }
 
 console.log()
+
+
+
+
+/* var array = [0];
+var counter = array.push(1);
+
+function loop(){ 
+console.log(array);
+// Console will output 1, 2, 3, 4, 5, 6
+
+console.log(counter);
+// Console will output 6
+
+if (array.length < 10) {
+
+    ++counter;
+  
+   
+}
+
+}
+ */
