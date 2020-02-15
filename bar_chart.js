@@ -18,7 +18,7 @@ function loop(){
   //console.log(queueSize)
  
 
-if (array.length < 5) {
+if (array.length < 20) {
   array.unshift(queueSize);
     setTimeout(loop, 400)
     console.clear()
@@ -39,16 +39,26 @@ if (array.length < 5) {
  function setHeight(){   
 //find the current number: console.log(array[0])
 console.log(array[0])
+for (let i = 0; i<20; i++){
+  let oneBar;
+  oneBar=document.querySelector(`#bars > div:nth-child(${i+1})`);
+  oneBar.style.setProperty("--barHeight", array[i]);
+}
+}
+//pattern
 
-const oneBar = document.querySelector("#bars > div:nth-child(1)");
-oneBar.style.height="100px";
-//oneBar.style.setProperty("--barHeight", array[0]); 
+/* const oneBar = document.querySelector("#bars > div:nth-child(1)");
+oneBar.style.setProperty("--barHeight", array[0]); 
 
+const oneBar2 = document.querySelector("#bars > div:nth-child(2)");
+oneBar2.style.setProperty("--barHeight", array[1]); 
 
-//set the height of the bar:
+const oneBar3 = document.querySelector("#bars > div:nth-child(3)");
+oneBar3.style.setProperty("--barHeight", array[2]);  */
+
+//test
 //oneBar.style.height="100px";
-//oneBar.style.setPrpperty("--barHeight", oneBar);
 
 
- }
+
  

@@ -1,5 +1,5 @@
 :root{
-    --barHeight
+    --barHeight: 40;
 }
 body {
     display: block;
@@ -9,10 +9,10 @@ body {
     align-items: flex-end;
 }
 .bar{   
-    width: 80px;
+    width: 40px;
     background-color: rgb(90, 218, 94);
     border: outset;
     border-style: outset;
     border-color:rgb(183, 238, 204);
-    height: var(--barHeight)*1px;
+    height: calc(var(--barHeight)*1px);
 }   
