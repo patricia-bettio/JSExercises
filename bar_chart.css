@@ -1,13 +1,18 @@
-:root {
-
+:root{
+    --barHeight
 }
-#bars {
+body {
+    display: block;
+}
+#bars{
     display: flex;
-    align-items: flex-end;;
+    align-items: flex-end;
 }
-.bar{
-    width: 50px;
-    color: pink;;
-    height: 100px;
-    border-color: aquamarine;
-}
+.bar{   
+    width: 80px;
+    background-color: rgb(90, 218, 94);
+    border: outset;
+    border-style: outset;
+    border-color:rgb(183, 238, 204);
+    height: var(--barHeight)*1px;
+}   
