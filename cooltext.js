@@ -15,31 +15,36 @@ function init(){
     showText();
 }
 
-function showText(){
-/* console.log(sentence.substring(0, counter+1))
-  console.log(sentence.substring(1, counter+2))
-  console.log(sentence.substring(2, counter+3))  */
- // oneLetter = sentence.substring(0, counter+1);
-  //console.log(oneLetter)
-  //txtElement.textContent = oneLetter;
-//console.log(sentence.length)
-  for (let i = 0; i <= sentence.length; i++) { 
-  oneLetter = sentence.substring(i+1,`${counter + [i]}`);
- // console.log(txtElement.textContent)
+/* function showText(){
+  //console.log(sentence.substring(0, counter+1))
+  //console.log(sentence.substring(1, counter+2))
+  //console.log(sentence.substring(2, counter+3))
 
- animate();
-  //create span element
- //oneLetter = document.createElement("SPAN");
- //console.log(document.createElement("SPAN"))
-//oneLetter.style.setProperty("animation-timing-function: ease-in");
-//document.body.appendChild(oneLetter);
- //put the character inside
-//console.log(oneLetter)
+  for (let i = 0; i <= sentence.length; i++, setTimeout(500)) { 
+      
+  oneLetter = sentence.substring(i+1,`${counter + [i]}`);
+ txtElement.textContent = oneLetter
+  console.log(oneLetter)
   setTimeout( 400)
 }
+} */
+
+
+//test2
+
+function showText(){
+    console.log(sentence.split(""));
+    let splitArray = sentence.split("")
+    for (let i = 0; i < sentence.length; i++) {
+        splitArray[i];
+        console.clear()
+       // console.log(splitArray)
+       let getOne = document.createElement('span'); 
+       getOne.innerText = splitArray[i];
+       txtElement.appendChild(getOne);
+
+
+    }
+    console.log(splitArray)
+    console.log(txtElement)
 }
-function animate(){
-    console.log(oneLetter)
-  // console.log(oneLetter.textContent);
-  
- }
