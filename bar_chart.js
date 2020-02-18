@@ -39,7 +39,7 @@ if (array.length < 20) {
  function setHeight(){   
 //find the current number: console.log(array[0])
 console.log(array[0])
-for (let i = 0; i<20; i++){
+for (let i = 0; i<array.length; i++){
   let oneBar;
   oneBar=document.querySelector(`#bars > div:nth-child(${i+1})`);
   oneBar.style.setProperty("--barHeight", array[i]);
